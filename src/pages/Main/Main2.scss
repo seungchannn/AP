@@ -1,0 +1,212 @@
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 650px;
+  //   margin-top: 55px;
+  //   border: solid 2px rebeccapurple;
+  background-color: #f6f7f7;
+  @media screen and (max-width: 1024px) {
+    // margin-top: 56px;
+    height: 600px;
+  }
+}
+
+.main {
+  height: 100%;
+  width: 1000px;
+  padding-top: 30px;
+  display: flex;
+  background-color: #f6f7f7;
+
+  @media screen and (max-width: 1024px) {
+    flex-direction: column;
+    align-items: center;
+
+    .mainCopy {
+      order: 1; // 맨 위로
+    }
+
+    .mainRight {
+      order: 2; // 두 번째로
+    }
+
+    .mainLeft {
+      order: 3; // 세 번째로
+    }
+  }
+}
+
+.mainLeft {
+  height: 60%;
+  width: 50%;
+  margin-top: 100px;
+  margin-left: 50px;
+  margin-bottom: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center; // 모든 요소를 가운데 정렬
+
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 0;
+    justify-content: center;
+  }
+
+  // 나머지 스타일...
+}
+
+.mainRight {
+  height: 50%;
+  width: 50%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+
+  @media screen and (max-width: 1024px) {
+    width: 80%;
+    margin-top: 10px;
+
+    .iphone img {
+      width: 200px;
+      height: auto;
+    }
+  }
+}
+
+.mainCopy {
+  height: 200px;
+  font-size: 58px;
+  font-weight: bold;
+  margin-bottom: 20px;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 10px;
+  }
+}
+
+.cta {
+  display: flex;
+
+  .storeBtn {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    .googleBtn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 255px;
+      height: 72px;
+      margin-bottom: 20px;
+      border-radius: 40px;
+
+      @media screen and (max-width: 1024px) {
+        width: 200px;
+        height: 60px;
+
+        display: none;
+      }
+    }
+  }
+
+  .qr {
+    width: 160px;
+    height: 160px;
+    margin-left: 30px;
+    border-radius: 20px;
+    border: solid 8px white;
+
+    @media screen and (max-width: 1024px) {
+      display: none;
+    }
+  }
+}
+
+.instaCopy {
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+  //   border: solid 1px red;
+  margin-top: 120px;
+  margin-bottom: 15px;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 22px;
+    text-align: center;
+    margin-top: 40px;
+  }
+}
+.instaSubCopy {
+  font-size: 30px;
+  font-weight: 350;
+  color: gray;
+  text-align: center;
+  //   border: solid 1px red;
+  margin-top: 40px;
+  margin-bottom: 15px;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 17px;
+    text-align: center;
+    margin-top: 40px;
+  }
+}
+
+.instaId {
+  height: 100px;
+  width: 360px;
+  margin: 50px auto 300px auto;
+  //   border: solid 1px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .formContainer {
+    display: flex;
+    // border: solid 1px black;
+    width: 100%;
+    align-items: center; // 요소들을 세로 중앙에 위치시킴
+
+    @media screen and (max-width: 1024px) {
+      width: 340px;
+    }
+
+    .MuiTextField-root,
+    .MuiButton-root {
+      height: 55px; // 텍스트 필드와 버튼의 높이 동일하게 설정
+      margin-right: 8px; // 요소 간 간격 조정
+    }
+    .MuiTextField-root {
+      width: 80%;
+    }
+    .MuiButton-root {
+      width: 20%;
+      margin-right: 0; // 마지막 요소의 우측 마진 제거
+    }
+  }
+}
+
+.appBtn {
+  display: none;
+  position: fixed;
+  font-size: 20px;
+  color: white;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  //   border: solid 2px red;
+  background-color: #1876d1; // 배경색은 원하는 대로 조정
+  text-align: center; // 텍스트 중앙 정렬
+  line-height: 60px;
+  border-radius: 0;
+
+  @media screen and (max-width: 1024px) {
+    display: block; // 모바일 화면에서만 표시
+  }
+}
